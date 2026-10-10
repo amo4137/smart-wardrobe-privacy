@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Wardrobe — politique de confidentialité / privacy policy</title>
+<meta name="description" content="Politique de confidentialité de Smart Wardrobe / Smart Wardrobe privacy policy.">
+<!--
+  Page publique demandée par Google Play. Source : docs/19_PRIVACY_POLICY.md.
+  Avant publication, remplacer chaque texte entre crochets (classe "todo").
+-->
+<style>
+  :root {
+    --bg: #fdfbff; --fg: #1d1b20; --muted: #5f5b66; --accent: #5b4f7a;
+    --line: #d9d4e0; --todo-bg: #fff3c4; --todo-fg: #5c4600;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141218; --fg: #e6e0e9; --muted: #b0aab7; --accent: #cfbcff;
+      --line: #3a3640; --todo-bg: #4a3d00; --todo-fg: #ffe9a3;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin: 1.5rem 0 .25rem; }
+  h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; color: var(--accent); }
+  p, ul, ol { margin: .5rem 0; }
+  li { margin: .35rem 0; }
+  .updated { color: var(--muted); margin-top: 0; }
+  nav { display: flex; gap: 1rem; padding-top: 1rem; }
+  nav a { color: var(--accent); }
+  section + section { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  .todo { background: var(--todo-bg); color: var(--todo-fg); padding: 0 .25em; border-radius: .25em; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Langue / Language">
+  <a href="#fr" hreflang="fr">Français</a>
+  <a href="#en" hreflang="en">English</a>
+</nav>
+
+<section id="fr" lang="fr">
+<h1>Smart Wardrobe — politique de confidentialité</h1>
+<p class="updated">Dernière mise à jour : <span class="todo">[date de publication]</span></p>
+
+<h2>Qui est responsable</h2>
+<p><span class="todo">[Nom ou raison sociale de l’éditeur]</span>, <span class="todo">[adresse de contact]</span>. Pour toute question ou demande sur vos données : <span class="todo">[adresse e-mail de contact]</span>.</p>
+
+<h2>L’essentiel</h2>
+<p>Smart Wardrobe fonctionne sans compte et sans publicité. Vos vêtements, vos photos, vos tenues et votre historique restent <strong>sur votre téléphone</strong>. Je ne collecte rien sur des serveurs qui m’appartiennent, et l’application ne contient ni outil de mesure d’audience, ni publicité, ni outil de rapport de plantage.</p>
+
+<h2>Ce qui reste sur votre téléphone</h2>
+<p>Pièces du dressing, photos (originales, copies réduites, détourages), tenues, historique des ports, préférences, profils (y compris ceux d’un enfant : tranche d’âge, stature et tailles facultatives, décidés par l’adulte qui utilise l’application) et réglages. Ces données sont dans l’espace privé de l’application. Elles ne sont pas sauvegardées dans le cloud par Android et ne sont pas copiées lors d’un transfert vers un nouvel appareil. Désinstaller l’application les efface.</p>
+
+<h2>Ce qui peut sortir de votre téléphone — uniquement si vous l’activez</h2>
+<ol>
+  <li><strong>Analyse d’une photo par IA</strong> (désactivée tant que vous n’avez pas accepté ; un profil enfant demande un accord propre). Une copie réduite de la photo (1&nbsp;024&nbsp;px au plus, sans métadonnées : ni EXIF ni position), la langue et la liste des catégories possibles sont envoyées à <strong>votre propre serveur</strong> (un module Home Assistant que vous installez), qui les transmet à <strong>Google Gemini</strong> pour obtenir des suggestions (catégorie, couleurs, matières, style). Le nom de la pièce, vos notes, votre profil et l’âge ne sont jamais envoyés. Le serveur n’écrit pas la photo sur disque. Avec l’offre gratuite de Gemini, Google peut utiliser les contenus envoyés pour améliorer ses produits, y compris par relecture humaine. Vous validez chaque suggestion.</li>
+  <li><strong>Météo</strong> (désactivée tant que vous n’avez pas choisi une ville). Le nom de la ville tapé, puis des coordonnées arrondies à 0,1° (environ 10&nbsp;km), sont envoyés à <strong>Open-Meteo</strong>. Aucune position GPS n’est lue, aucune permission de localisation n’est demandée.</li>
+  <li><strong>Synchronisation entre appareils</strong> (désactivée par défaut). Les données sont chiffrées sur l’appareil (AES-256-GCM, clé dérivée de votre phrase secrète) avant d’être écrites dans un dossier <strong>que vous choisissez</strong> (par exemple un dossier de votre service de stockage). Je n’ai pas accès à ce dossier ni à votre phrase secrète.</li>
+  <li><strong>Export</strong> : l’archive que vous créez va à l’emplacement que vous choisissez. Elle n’est pas chiffrée et contient les données de tous les profils.</li>
+</ol>
+<p>Le <strong>détourage</strong> des photos (« Retirer le fond ») et la <strong>suggestion de couleurs</strong> se font entièrement sur votre téléphone : rien n’est envoyé.</p>
+
+<h2>Permissions</h2>
+<p>Internet (analyse IA, météo, vos serveurs). La caméra et la galerie passent par les sélecteurs du système, sans autorisation générale d’accès aux fichiers. Aucune permission de localisation, de contacts ou de micro.</p>
+
+<h2>Vos droits et vos choix</h2>
+<p>Vous pouvez à tout moment : retirer votre accord à l’analyse IA ou à la météo (Paramètres), supprimer les analyses conservées, exporter toutes vos données, supprimer une pièce, un profil ou tout le dressing, arrêter la synchronisation. Comme je ne détiens aucune de vos données, il n’y a rien à me demander d’effacer ; pour une donnée envoyée à Google ou à Open-Meteo, leurs propres politiques s’appliquent. Pour toute demande, écrivez à <span class="todo">[adresse e-mail]</span>. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+
+<h2>Enfants</h2>
+<p>Smart Wardrobe n’est pas destinée aux enfants. Un adulte peut créer un profil pour un enfant dont il gère la garde-robe : l’enfant n’utilise pas l’application et aucune photo de l’enfant n’est demandée.</p>
+
+<h2>Sécurité</h2>
+<p>Données dans l’espace privé de l’application ; chiffrement de la synchronisation ; liaison avec votre serveur en HTTPS dès qu’il est joint hors de votre réseau local (le HTTP simple n’est accepté que vers une adresse du réseau local).</p>
+
+<h2>Changements</h2>
+<p>Toute modification de cette politique sera datée ici ; un changement qui élargit ce qui sort du téléphone demandera à nouveau votre accord dans l’application.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Smart Wardrobe — privacy policy</h1>
+<p class="updated">Last updated: <span class="todo">[publication date]</span></p>
+
+<h2>Controller</h2>
+<p><span class="todo">[Publisher name]</span>, <span class="todo">[contact address]</span>. Contact for any request: <span class="todo">[contact e-mail]</span>.</p>
+
+<h2>In short</h2>
+<p>The app has no account and no ads. Your clothes, photos, outfits and history stay <strong>on your phone</strong>. I do not collect anything on servers I run, and the app contains no analytics, advertising or crash-reporting tool.</p>
+
+<h2>Stored on your phone</h2>
+<p>Wardrobe items, photos (originals, reduced copies, cutouts), outfits, wear history, preferences, profiles (including a child’s: age range and optional height and sizes, managed by the adult using the app) and settings, in the app’s private storage. They are not backed up to the cloud by Android nor copied to a new device by device transfer. Uninstalling the app deletes them.</p>
+
+<h2>Leaves your phone only if you turn it on</h2>
+<ol>
+  <li><strong>AI photo analysis</strong> (off until you accept; a child’s profile needs its own consent). A reduced copy of the photo (1,024&nbsp;px at most, without metadata), the language and the list of possible categories go to <strong>your own server</strong> (a Home Assistant add-on you install), which forwards them to <strong>Google Gemini</strong> for suggestions (category, colours, materials, style). The item’s name, your notes, your profile and any age are never sent. The server does not write the photo to disk. On Gemini’s free tier, Google may use submitted content to improve its products, including human review. You confirm every suggestion.</li>
+  <li><strong>Weather</strong> (off until you choose a town). The town name you type, then coordinates rounded to 0.1° (about 10&nbsp;km), go to <strong>Open-Meteo</strong>. No GPS position is read and no location permission is requested.</li>
+  <li><strong>Sync between devices</strong> (off by default). Data is encrypted on the device (AES-256-GCM, key derived from your passphrase) before being written to a folder <strong>you choose</strong>. I have no access to that folder or your passphrase.</li>
+  <li><strong>Export</strong>: the archive you create goes where you choose; it is not encrypted and contains every profile.</li>
+</ol>
+<p><strong>Background removal</strong> and <strong>colour suggestions</strong> run entirely on your phone: nothing is sent.</p>
+
+<h2>Permissions</h2>
+<p>Internet only. Camera and gallery go through system pickers; no location, contacts or microphone permission.</p>
+
+<h2>Your rights and choices</h2>
+<p>At any time: withdraw consent to AI analysis or weather, delete saved analyses, export everything, delete an item, a profile or the whole wardrobe, stop syncing. Since I hold none of your data there is nothing to ask me to erase; data sent to Google or Open-Meteo is subject to their own policies. Contact: <span class="todo">[e-mail]</span>. You may lodge a complaint with your data protection authority (in France, the <a href="https://www.cnil.fr">CNIL</a>).</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children. An adult may keep a profile for a child whose wardrobe they manage; the child does not use the app and no photo of the child is requested.</p>
+
+<h2>Security</h2>
+<p>Private app storage; encrypted sync; HTTPS to your server whenever it is reached outside your local network (plain HTTP is accepted only for a local-network address).</p>
+
+<h2>Changes</h2>
+<p>Changes will be dated here; a change that widens what leaves the phone will ask for your consent again in the app.</p>
+</section>
+</main>
+</body>
+</html>
