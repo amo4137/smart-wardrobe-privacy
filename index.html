@@ -58,7 +58,7 @@
 
 <h2>Ce qui peut sortir de votre téléphone — uniquement si vous l’activez</h2>
 <ol>
-  <li><strong>Analyse d’une photo par IA</strong> (désactivée tant que vous n’avez pas accepté ; un profil enfant demande un accord propre). Une copie réduite de la photo (1&nbsp;024&nbsp;px au plus, sans métadonnées : ni EXIF ni position), la langue et la liste des catégories possibles sont envoyées à <strong>votre propre serveur</strong> (un module Home Assistant que vous installez), qui les transmet à <strong>Google Gemini</strong> pour obtenir des suggestions (catégorie, couleurs, matières, style). Le nom de la pièce, vos notes, votre profil et l’âge ne sont jamais envoyés. Le serveur n’écrit pas la photo sur disque. Avec l’offre gratuite de Gemini, Google peut utiliser les contenus envoyés pour améliorer ses produits, y compris par relecture humaine. Vous validez chaque suggestion.</li>
+  <li><strong>Analyse d’une photo par IA</strong> (désactivée tant que vous n’avez pas accepté ; un profil enfant demande un accord propre). Une copie réduite de la photo (1&nbsp;024&nbsp;px au plus, sans métadonnées : ni EXIF ni position), la langue et la liste des catégories possibles sont envoyées à <strong>Google Gemini</strong> pour obtenir des suggestions (catégorie, couleurs, matières, style), directement depuis l’application, avec <strong>votre propre clé d’API Gemini</strong> (elle reste sur le téléphone et n’est envoyée qu’à Google). Je ne reçois rien : aucun serveur ne se trouve entre votre téléphone et Google. Le nom de la pièce, vos notes, votre profil et l’âge ne sont jamais envoyés. Avec l’offre gratuite de Gemini, hors Espace économique européen, Suisse et Royaume-Uni, Google peut utiliser les contenus envoyés pour améliorer ses produits, y compris par relecture humaine ; dans ces régions, les conditions des services payants de Google s’appliquent. Vous validez chaque suggestion.</li>
   <li><strong>Météo</strong> (désactivée tant que vous n’avez pas choisi une ville). Le nom de la ville tapé, puis des coordonnées arrondies à 0,1° (environ 10&nbsp;km), sont envoyés à <strong>Open-Meteo</strong>. Aucune position GPS n’est lue, aucune permission de localisation n’est demandée.</li>
   <li><strong>Synchronisation entre appareils</strong> (désactivée par défaut). Les données sont chiffrées sur l’appareil (AES-256-GCM, clé dérivée de votre phrase secrète) avant d’être écrites dans un dossier <strong>que vous choisissez</strong> (par exemple un dossier de votre service de stockage). Je n’ai pas accès à ce dossier ni à votre phrase secrète.</li>
   <li><strong>Export</strong> : l’archive que vous créez va à l’emplacement que vous choisissez. Elle n’est pas chiffrée et contient les données de tous les profils.</li>
@@ -66,7 +66,7 @@
 <p>Le <strong>détourage</strong> des photos (« Retirer le fond ») et la <strong>suggestion de couleurs</strong> se font entièrement sur votre téléphone : rien n’est envoyé.</p>
 
 <h2>Permissions</h2>
-<p>Internet (analyse IA, météo, vos serveurs). La caméra et la galerie passent par les sélecteurs du système, sans autorisation générale d’accès aux fichiers. Aucune permission de localisation, de contacts ou de micro.</p>
+<p>Internet (analyse IA, météo). La caméra et la galerie passent par les sélecteurs du système, sans autorisation générale d’accès aux fichiers. Aucune permission de localisation, de contacts ou de micro.</p>
 
 <h2>Vos droits et vos choix</h2>
 <p>Vous pouvez à tout moment : retirer votre accord à l’analyse IA ou à la météo (Paramètres), supprimer les analyses conservées, exporter toutes vos données, supprimer une pièce, un profil ou tout le dressing, arrêter la synchronisation. Comme je ne détiens aucune de vos données, il n’y a rien à me demander d’effacer ; pour une donnée envoyée à Google ou à Open-Meteo, leurs propres politiques s’appliquent. Pour toute demande, écrivez à <a href="mailto:amauryvallein@hotmail.com">amauryvallein@hotmail.com</a>. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
@@ -75,7 +75,7 @@
 <p>Smart Wardrobe n’est pas destinée aux enfants. Un adulte peut créer un profil pour un enfant dont il gère la garde-robe : l’enfant n’utilise pas l’application et aucune photo de l’enfant n’est demandée.</p>
 
 <h2>Sécurité</h2>
-<p>Données dans l’espace privé de l’application ; chiffrement de la synchronisation ; liaison avec votre serveur en HTTPS dès qu’il est joint hors de votre réseau local (le HTTP simple n’est accepté que vers une adresse du réseau local).</p>
+<p>Données dans l’espace privé de l’application ; chiffrement de la synchronisation ; connexions chiffrées (HTTPS) uniquement ; la clé d’API reste dans l’espace privé de l’application, exclu des sauvegardes Android.</p>
 
 <h2>Changements</h2>
 <p>Toute modification de cette politique sera datée ici ; un changement qui élargit ce qui sort du téléphone demandera à nouveau votre accord dans l’application.</p>
@@ -96,7 +96,7 @@
 
 <h2>Leaves your phone only if you turn it on</h2>
 <ol>
-  <li><strong>AI photo analysis</strong> (off until you accept; a child’s profile needs its own consent). A reduced copy of the photo (1,024&nbsp;px at most, without metadata), the language and the list of possible categories go to <strong>your own server</strong> (a Home Assistant add-on you install), which forwards them to <strong>Google Gemini</strong> for suggestions (category, colours, materials, style). The item’s name, your notes, your profile and any age are never sent. The server does not write the photo to disk. On Gemini’s free tier, Google may use submitted content to improve its products, including human review. You confirm every suggestion.</li>
+  <li><strong>AI photo analysis</strong> (off until you accept; a child’s profile needs its own consent). A reduced copy of the photo (1,024&nbsp;px at most, without metadata), the language and the list of possible categories go to <strong>Google Gemini</strong> for suggestions (category, colours, materials, style), in one of two ways of your choice: straight from the app with <strong>your own Gemini API key</strong> (it stays on the phone and is only sent to Google). I receive nothing: no server sits between your phone and Google. The item’s name, your notes, your profile and any age are never sent. On Gemini’s free tier, outside the European Economic Area, Switzerland and the United Kingdom, Google may use submitted content to improve its products, including human review; in those regions Google’s paid-service terms apply. You confirm every suggestion.</li>
   <li><strong>Weather</strong> (off until you choose a town). The town name you type, then coordinates rounded to 0.1° (about 10&nbsp;km), go to <strong>Open-Meteo</strong>. No GPS position is read and no location permission is requested.</li>
   <li><strong>Sync between devices</strong> (off by default). Data is encrypted on the device (AES-256-GCM, key derived from your passphrase) before being written to a folder <strong>you choose</strong>. I have no access to that folder or your passphrase.</li>
   <li><strong>Export</strong>: the archive you create goes where you choose; it is not encrypted and contains every profile.</li>
@@ -113,7 +113,7 @@
 <p>The app is not directed at children. An adult may keep a profile for a child whose wardrobe they manage; the child does not use the app and no photo of the child is requested.</p>
 
 <h2>Security</h2>
-<p>Private app storage; encrypted sync; HTTPS to your server whenever it is reached outside your local network (plain HTTP is accepted only for a local-network address).</p>
+<p>Private app storage; encrypted sync; Encrypted connections (HTTPS) only; the API key stays in the app’s private storage, excluded from Android backups.</p>
 
 <h2>Changes</h2>
 <p>Changes will be dated here; a change that widens what leaves the phone will ask for your consent again in the app.</p>
